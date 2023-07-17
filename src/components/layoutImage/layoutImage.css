@@ -1,0 +1,33 @@
+.container{
+    width: 100vw;
+    padding: 0 20px;
+    columns: 5;
+    column-gap: 20px;
+}
+
+.container .box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+.container .box img:hover{
+    cursor: zoom-in;
+    outline: 5px solid var(--main-color);
+}
+
+@media(max-width:768px){
+    .container{
+        columns: 2;
+    }
+}
+
+@media(max-width:480px){
+    .container{
+        columns: 1;
+    }
+}
