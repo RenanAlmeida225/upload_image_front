@@ -1,10 +1,13 @@
 import { Header } from '@/components/header/header';
-import { LayoutImage } from '@/components/layoutImage/layoutImage';
+import { ImageForm } from '@/components/imageForm/imageForm';
+
+// import { LayoutImage } from '@/components/layoutImage/layoutImage';
 export default function Home() {
 	return (
 		<main>
 			<Header />
-			<LayoutImage />
+			{/* <LayoutImage /> */}
+			<ImageForm />
 		</main>
 	);
 }

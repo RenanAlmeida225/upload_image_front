@@ -14,10 +14,11 @@
 .container .box img{
     max-width: 100%;
     border-radius: 15px;
+    transition: 0.2s;
 }
 .container .box img:hover{
     cursor: zoom-in;
-    outline: 5px solid var(--main-color);
+    outline: 2px solid var(--main-color);
 }
 
 @media(max-width:768px){

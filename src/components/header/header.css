@@ -1,26 +1,28 @@
-header{
-    width: 100vw;
-    height: 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    padding:0 20px;
+header {
+	background-color: white;
+	width: 100vw;
+	height: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	padding: 0 20px;
 }
 
-.btn-save{
-    width: 100px;
-    height: 40px;
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
+.btn-save {
+	width: 100px;
+	height: 40px;
+	background-color: var(--main-color);
+	color: white;
+	border: none;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
-.btn-save:hover{
-    border: 1px solid var(--main-color);
-    background-color: white;
-    color: var(--main-color);
+.btn-save:hover {
+	border: 2px solid var(--main-color);
+	background-color: white;
+	color: var(--main-color);
 }

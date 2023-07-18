@@ -1,0 +1,93 @@
+main {
+	height: 100vh;
+	background-color: #cfd2d4;
+}
+
+.imageForm {
+	background-color: white;
+	max-width: 900px;
+	max-height: 500px;
+	margin: 20px auto;
+	border-radius: 50px;
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-area: 20px;
+}
+
+.imageForm .image {
+	background-color: #cfd2d4;
+	border-radius: 15px;
+	width: 250px;
+	height: 400px;
+	padding: 10px;
+}
+
+.imageForm .image input {
+	display: none;
+}
+
+.imageForm .image label {
+	color: #bdc0c2;
+	border: 2px dashed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.imageForm .image label:hover {
+	color: var(--main-color);
+}
+
+.imageForm .image label span img {
+	width: 100%;
+}
+
+/* ------------------------------------------ */
+.imageForm .attribute {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.imageForm .attribute input[type='text'] {
+	outline: none;
+	border: none;
+	line-height: 40px;
+	font-size: 40px;
+	border-bottom: 2px solid #bdc0c2;
+}
+.imageForm .attribute input[type='text']:focus {
+	border-bottom: 2px solid var(--main-color);
+}
+textarea {
+	font-size: 24px;
+	resize: none;
+	outline: none;
+}
+textarea:focus {
+	border: 2px solid var(--main-color);
+}
+
+.imageForm .attribute .btn-save {
+	width: 100px;
+	height: 40px;
+	background-color: var(--main-color);
+	color: white;
+	border: none;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.imageForm .attribute .btn-save:hover {
+	border: 2px solid var(--main-color);
+	background-color: white;
+	color: var(--main-color);
+}
