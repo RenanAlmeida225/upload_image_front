@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import './imageForm.css';
+import { useRouter } from 'next/navigation';
 
 export function ImageForm() {
 	let [image, setImage] = useState('');
@@ -64,7 +65,10 @@ export function ImageForm() {
 				></textarea>
 				<button
 					className="btn-save"
-					onClick={() => save(file!, title, description)}
+					onClick={() => {
+						save(file!, title, description);
+						useRouter().push('/');
+					}}
 				>
 					Salvar
 				</button>
