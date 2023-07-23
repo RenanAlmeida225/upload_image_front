@@ -7,7 +7,7 @@ export function Header() {
 	return (
 		<header>
 			<button className="btn-save" onClick={() => router.push('/save')}>
-				SALVAR
+				CREATE
 			</button>
 		</header>
 	);

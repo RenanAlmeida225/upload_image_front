@@ -1,37 +1,36 @@
-main {
-	height: 100vh;
-	background-color: #cfd2d4;
+body {
+	background-color: #e0e0e0;
 }
 
-.imageForm {
+form {
 	background-color: white;
+	margin: auto;
 	max-width: 900px;
-	max-height: 500px;
-	margin: 20px auto;
-	border-radius: 50px;
-	padding: 30px;
+	height: 700px;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	grid-area: 20px;
+	gap: 50px;
+	border-radius: 50px;
 }
 
-.imageForm .image {
-	background-color: #cfd2d4;
-	border-radius: 15px;
-	width: 250px;
-	height: 400px;
-	padding: 10px;
+form .image {
+	width: 300px;
+	height: 500px;
 }
 
-.imageForm .image input {
-	display: none;
+#file {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -10;
 }
 
-.imageForm .image label {
-	color: #bdc0c2;
-	border: 2px dashed;
+form .image label {
+	background-color: #e0e0e0;
+	border-radius: 25px;
+	color: #a3a3a3;
+	border: 2px dashed #a3a3a3;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -39,42 +38,41 @@ main {
 	align-items: center;
 	cursor: pointer;
 }
-.imageForm .image label:hover {
+
+form .image label:hover {
 	color: var(--main-color);
 }
 
-.imageForm .image label span img {
-	width: 100%;
+form .image label span img {
+	width: 300px;
+	height: 500px;
+	object-fit: contain;
 }
-
-/* ------------------------------------------ */
-.imageForm .attribute {
-	width: 60%;
+/* ================================================================== */
+form .attributes {
+	width: 450px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 30px;
 }
 
-.imageForm .attribute input[type='text'] {
-	outline: none;
+form .attributes input[type='text'] {
+	line-height: 30px;
 	border: none;
-	line-height: 40px;
-	font-size: 40px;
-	border-bottom: 2px solid #bdc0c2;
-}
-.imageForm .attribute input[type='text']:focus {
-	border-bottom: 2px solid var(--main-color);
-}
-textarea {
-	font-size: 24px;
-	resize: none;
+	border-bottom: 2px solid #e0e0e0;
+	font-size: 30px;
 	outline: none;
+	font-weight: bold;
 }
-textarea:focus {
-	border: 2px solid var(--main-color);
+form .attributes input[type='text']:focus {
+	border-bottom-color: var(--main-color);
 }
 
-.imageForm .attribute .btn-save {
+form .attributes textarea {
+	resize: none;
+}
+
+.btn-save {
 	width: 100px;
 	height: 40px;
 	background-color: var(--main-color);
@@ -86,7 +84,7 @@ textarea:focus {
 	transition: 0.5s;
 }
 
-.imageForm .attribute .btn-save:hover {
+.btn-save:hover {
 	border: 2px solid var(--main-color);
 	background-color: white;
 	color: var(--main-color);

@@ -1,9 +1,13 @@
-:root{
-  --main-color: #449DD1;
+:root {
+	--main-color: #449dd1;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: white;
 }
